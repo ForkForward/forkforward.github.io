@@ -1,0 +1,18 @@
+/* ForkForward navy, #14213D, for the header. The red of the dotnet-mapper mark belongs to that
+   project (it credits AutoMapper), so the organization site does not use it. */
+:root > * {
+  --md-primary-fg-color: #14213d;
+  --md-primary-fg-color--light: #2b3a5c;
+  --md-primary-fg-color--dark: #0b1426;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: #ffffffb3;
+  --md-accent-fg-color: #2b5aa8;
+  --md-accent-fg-color--transparent: #2b5aa81a;
+  --md-typeset-a-color: #2b5aa8;
+}
+
+/* Navy links would not be readable on the dark background. */
+[data-md-color-scheme="slate"] {
+  --md-accent-fg-color: #8fb0f0;
+  --md-typeset-a-color: #8fb0f0;
+}

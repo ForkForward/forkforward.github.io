@@ -1,0 +1,21 @@
+# Dependabot: monthly pull requests with newer versions of Zensical and of the GitHub Actions
+# used by the workflow, one grouped pull request per ecosystem.
+version: 2
+updates:
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: monthly
+      timezone: Europe/Warsaw
+    groups:
+      pip:
+        patterns: ["*"]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+      timezone: Europe/Warsaw
+    groups:
+      github-actions:
+        patterns: ["*"]

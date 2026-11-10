@@ -1,0 +1,85 @@
+# Zensical configuration for the ForkForward organization site, https://forkforward.dev/
+#
+# This repository must be named forkforward.github.io: it is the organization site, so the custom
+# domain forkforward.dev is set here (Settings > Pages > Custom domain) and every project site of
+# the organization is served under it too. Each project publishes its own documentation from its
+# own repository, at https://forkforward.dev/<repository>/; this site only introduces ForkForward
+# and links to them.
+#
+# No CNAME file: GitHub ignores it for sites published by a GitHub Actions workflow, and keeps
+# the custom domain in the repository settings instead.
+#
+# Preview it locally:
+#
+#   pip install -r requirements.txt
+#   zensical serve          # http://localhost:8000/
+
+[project]
+site_name = "ForkForward"
+site_description = "ForkForward continues open-source libraries after their original line of development stops being open."
+site_author = "ForkForward contributors"
+site_url = "https://forkforward.dev/"
+copyright = "Copyright &copy; 2026 ForkForward contributors"
+
+repo_url = "https://github.com/ForkForward"
+repo_name = "ForkForward"
+
+nav = [
+  { "Home" = "index.md" },
+]
+
+# ForkForward navy (see assets/brand/README.md in dotnet-mapper).
+extra_css = ["stylesheets/extra.css"]
+
+[project.theme]
+language = "en"
+features = [
+  "content.code.copy",
+  "navigation.footer",
+  "navigation.instant",
+  "navigation.top",
+  "search.highlight",
+]
+
+[project.theme.icon]
+logo = "lucide/git-fork"
+repo = "fontawesome/brands/github"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+primary = "custom"
+accent = "custom"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "Switch to light mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+primary = "custom"
+accent = "custom"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+primary = "custom"
+accent = "custom"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to system preference"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/ForkForward"
+name = "ForkForward on GitHub"
+
+[project.markdown_extensions]
+admonition = {}
+attr_list = {}
+md_in_html = {}
+toc.permalink = true
+pymdownx.details = {}
+pymdownx.highlight.anchor_linenums = true
+pymdownx.highlight.pygments_lang_class = true
+pymdownx.inlinehilite = {}
+pymdownx.superfences = {}

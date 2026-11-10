@@ -1,0 +1,3 @@
+# Zensical output and build cache
+site/
+.cache/
