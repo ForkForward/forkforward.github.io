@@ -22,6 +22,7 @@ building on current platforms.
 |---|---|---|---|
 | [dotnet-cargo](https://github.com/ForkForward/dotnet-cargo) | [ForkForward Cargo docs](https://forkforward.dev/dotnet-cargo/) | [`ForkForward.Cargo`](https://www.nuget.org/packages/ForkForward.Cargo) | MassTransit 8.5.12 (Apache 2.0) by Chris Patterson, Dru Sellers and contributors |
 | [dotnet-mapper](https://github.com/ForkForward/dotnet-mapper) | [ForkForward.Mapper docs](https://forkforward.dev/dotnet-mapper/) | [`ForkForward.Mapper`](https://www.nuget.org/packages/ForkForward.Mapper) | AutoMapper 14.0.0 (MIT) by Jimmy Bogard and contributors |
+| [dotnet-mediator](https://github.com/ForkForward/dotnet-mediator) | [ForkForward.Mediator docs](https://forkforward.dev/dotnet-mediator/) | [`ForkForward.Mediator`](https://www.nuget.org/packages/ForkForward.Mediator) | MediatR 12.5.0 (Apache 2.0) by Jimmy Bogard and contributors |
 
 ## Finding our repositories
 
